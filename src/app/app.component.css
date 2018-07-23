@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+
+* {
+  font-family: 'Poor Story';
+}
+
+.title {
+  font-size: 64px;
+  margin: 0;
+  color: #3b2530;
+}

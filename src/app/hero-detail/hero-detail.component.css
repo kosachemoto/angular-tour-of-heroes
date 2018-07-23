@@ -1,0 +1,22 @@
+.hero-title {
+  font-size: 40px;
+  margin-top: 0;
+  color: #cd5c5c;
+}
+
+.hero-label {
+  text-align: right;
+  display: block;
+  font-size: 24px;
+}
+
+.hero-label__container {
+  width: 500px;
+}
+
+.hero-label__input {
+  padding: 0 15px;
+  font-family: inherit;
+  font-size: inherit;
+  outline: none;
+}
