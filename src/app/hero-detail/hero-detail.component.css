@@ -11,10 +11,11 @@
 }
 
 .hero-label__container {
-  width: 500px;
+  text-align: right;
 }
 
 .hero-label__input {
+  width: 100%;
   padding: 0 15px;
   font-family: inherit;
   font-size: inherit;

@@ -3,3 +3,24 @@
   margin-top: 0;
   color: #cd5c5c;
 }
+
+.hero-messages {
+  padding-left: 20px;
+}
+
+.hero-clear {
+  transition: all;
+  transition-duration: .2s;
+  transition-timing-function: ease-in-out;
+  color: #eaeaea;
+  cursor: pointer;
+}
+
+.hero-clear:hover {
+  color: #cd5c5c;
+}
+.hero-message {
+  padding: 5px 10px;
+  font-size: 24px;
+}
+

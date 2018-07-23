@@ -1,3 +1,10 @@
-<div>
-  <h2 class="hero-title">Message</h2>
+<div *ngIf="messagesService.messages.length">
+  <h2 class="hero-title">Messages: {{ messagesService.messages.length }} <span class="hero-clear" (click)="messagesService.clear()">&lt;Clear All&gt;</span></h2>
+  <div class="hero-messages">
+    <div 
+      class="hero-message" 
+      *ngFor="let message of messagesService.messages">
+      {{ message }}
+    </div>
+  </div>
 </div>

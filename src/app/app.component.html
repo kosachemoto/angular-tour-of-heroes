@@ -1,7 +1,9 @@
-<div>
+<div class="app">
   <h1 class="title">
     {{ title }}
   </h1>
   <app-hero-detail [hero]="selectedHero"></app-hero-detail>
-  <app-heroes [heroes]="heroes" (selectedHero)="onSelect($event)"></app-heroes>
+  <router-outlet></router-outlet>
+  <!-- <app-heroes [heroes]="heroes" (selectedHero)="onSelect($event)"></app-heroes> -->
+  <app-messages></app-messages>
 </div>

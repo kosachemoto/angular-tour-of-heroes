@@ -4,7 +4,16 @@
   font-family: 'Poor Story';
 }
 
+.app {
+  display: grid;
+  grid-template-columns: 25% 40% 35%;
+  grid-template-areas: 
+    "header    header   header"
+    "hero-list messages hero-details";
+}
+
 .title {
+  grid-area: header;
   font-size: 64px;
   margin: 0;
   color: #3b2530;

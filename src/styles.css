@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+app-hero-detail {
+  grid-area: hero-details;
+}
+
+app-heroes {
+  grid-area: hero-list;
+}
+
+app-messages {
+  grid-area: messages;
+}
