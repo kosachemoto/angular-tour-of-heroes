@@ -5,13 +5,17 @@
 }
 
 .hero-label {
-  text-align: right;
+  text-align: left;
   display: block;
   font-size: 24px;
 }
 
 .hero-label__container {
   text-align: right;
+}
+
+.hero-label__label {
+  padding-left: 17px;
 }
 
 .hero-label__input {

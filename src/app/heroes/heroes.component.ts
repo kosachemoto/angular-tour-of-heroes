@@ -1,4 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { MessagesService } from './../messages.service';
+import { HeroService } from './../hero.service';
+import { Component, OnInit } from '@angular/core';
 import { Hero } from './../hero';
 
 @Component({
@@ -7,17 +9,22 @@ import { Hero } from './../hero';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit {
-  @Input() heroes: Hero[];
+  selectedHero: Hero;
+  heroes: Hero[];
 
-  @Output() selectedHero = new EventEmitter<Hero>();
+  constructor(private heroService: HeroService, private messagesService: MessagesService) { }
 
-  constructor() { }
-
-  onSelect(hero: Hero): void {
-    this.selectedHero.emit(hero);
+  getHeroes(): void {
+    this.heroService.getHeroes()
+        .subscribe(heroes => this.heroes = heroes);
   }
 
   ngOnInit() {
-    
+    this.getHeroes();
+  }
+
+  onSelect(hero: Hero) {
+    this.selectedHero = hero;
+    this.messagesService.add("Hero " + hero.name + " was selected");
   }
 }

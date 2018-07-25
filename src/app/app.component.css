@@ -9,7 +9,7 @@
   grid-template-columns: 25% 40% 35%;
   grid-template-areas: 
     "header    header   header"
-    "hero-list messages hero-details";
+    "hero-list .        messages";
 }
 
 .title {
