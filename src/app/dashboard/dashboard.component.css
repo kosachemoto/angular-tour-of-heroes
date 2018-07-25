@@ -1,0 +1,18 @@
+.hero-top {
+  padding-left: 20px;
+}
+
+.hero-top__item {
+  transition: all;
+  transition-duration: .02s;
+  transition-timing-function: ease-in-out;
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.hero-top__item:hover {
+  color: #c76574;
+  cursor: pointer;
+}

@@ -1,11 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
 
-app-hero-detail {
-  grid-area: hero-details;
+.hero-title {
+  font-size: 40px;
+  margin-top: 0;
+  color: #cd5c5c;
+}
+
+app-heroes-nav {
+  grid-area: nav;
 }
 
 app-heroes {
   grid-area: hero-list;
+}
+
+app-dashboard {
+  grid-area: hero-list;
+}
+
+app-hero-detail {
+  grid-area: hero-detail;
 }
 
 app-messages {

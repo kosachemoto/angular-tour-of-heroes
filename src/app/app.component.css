@@ -6,10 +6,11 @@
 
 .app {
   display: grid;
-  grid-template-columns: 25% 40% 35%;
+  grid-template-columns: 40% 25% 30%;
   grid-template-areas: 
-    "header    header   header"
-    "hero-list .        messages";
+    "header    header      header"
+    "nav       nav         nav"
+    "hero-list hero-detail hero-detail";
 }
 
 .title {

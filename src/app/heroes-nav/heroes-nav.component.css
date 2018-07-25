@@ -1,0 +1,19 @@
+.heroes-nav {
+  padding: 0 20px;
+}
+
+.heroes-nav__item {
+  transition: all;
+  transition-duration: .02s;
+  transition-timing-function: ease-in-out;
+  display: inline-block;
+  padding: 0 10px;
+  font-size: 24px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.heroes-nav__item:hover {
+  color: #c76574;
+  cursor: pointer;
+}
