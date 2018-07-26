@@ -21,7 +21,7 @@
   outline: none;
 }
 
-.hero-goback {
+.hero-button {
   transition: all;
   transition-duration: .02s;
   transition-timing-function: ease-in-out;
@@ -33,6 +33,6 @@
   cursor: pointer;
 }
 
-.hero-goback:hover {
+.hero-button:hover {
   color: #cd5c5c;
 }
